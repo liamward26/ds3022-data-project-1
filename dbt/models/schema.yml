@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: Raw taxi data from DuckDB
+    schema: main
+    tables:
+      - name: yellow_trips
+        description: Yellow taxi trip data
+      - name: green_trips
+        description: Green taxi trip data
+      - name: taxi_lookup
+        description: Vehicle emissions lookup table

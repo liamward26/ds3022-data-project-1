@@ -1,2 +1,1 @@
-import duckdb
-import logging
+# i used dbt instead of this script so ignore

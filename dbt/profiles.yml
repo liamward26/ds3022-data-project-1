@@ -3,7 +3,8 @@ taxi_co2:
   outputs:
     dev:
       type: duckdb
-      path: ''
+      path: '../emissions.duckdb'
+      database: 'emissions'
       schema: main
       threads: 4
       keepalives_idle: 0
