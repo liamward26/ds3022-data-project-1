@@ -1,6 +1,4 @@
 duckdb
 pandas
 dbt-duckdb
-time
-logging
 matplotlib
