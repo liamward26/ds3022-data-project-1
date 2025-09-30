@@ -179,9 +179,9 @@ def analysis():
             yellow_data = con.execute("""
                 SELECT month_of_year, SUM(trip_co2_kgs) AS trip_co2_kgs
                 FROM yellow_trips
-                GROUP BY month_of_year # again if we were able to load the 10 years of data this would be year instead of month
+                GROUP BY month_of_year 
                 ORDER BY month_of_year
-            """).fetchall()
+            """).fetchall() # again if we were able to load the 10 years of data this would be year instead of month
 
             green_data = con.execute("""
                 SELECT month_of_year, SUM(trip_co2_kgs) AS trip_co2_kgs
